@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatGPT | Interface de Chat</title>
+  <link rel="stylesheet" href="styleChatBot.css">
+  <script src="scriptChat.js" defer></script>
+</head>
+<body>
+  <main class="chatbot">
+    <header class="chatbot__header">
+      <div class="brand-mark" aria-hidden="true">✦</div>
+      <div>
+        <p class="eyebrow">ASSISTENTE INTELIGENTE</p>
+        <h1>ChatGPT</h1>
+      </div>
+      <span class="status-indicator" aria-label="Interface pronta"></span>
+    </header>
+
+    <section class="chatbot__settings" aria-labelledby="settings-title">
+      <h2 id="settings-title">Conexão</h2>
+      <label for="apiKey">Chave da API</label>
+      <input
+        id="apiKey"
+        type="password"
+        placeholder="Cole sua chave da API"
+        autocomplete="off"
+        spellcheck="false"
+        required
+      >
+      <p class="hint">A chave não é armazenada por esta página.</p>
+    </section>
+
+    <section
+      id="chatMessages"
+      class="chatbot__messages"
+      aria-label="Mensagens da conversa"
+      aria-live="polite"
+    >
+      <div class="message message--assistant">
+        <span class="message__label">ASSISTENTE</span>
+        <p>Olá! Escreva sua mensagem para começar.</p>
+      </div>
+    </section>
+
+    <form id="chatForm" class="chatbot__form">
+      <label for="userMessage">Sua mensagem</label>
+      <div class="composer">
+        <textarea
+          id="userMessage"
+          rows="2"
+          placeholder="Digite sua mensagem..."
+          required
+        ></textarea>
+        <button id="sendButton" type="submit">
+          <span>Enviar</span>
+          <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+      <p id="statusMessage" class="hint" role="status"></p>
+    </form>
+  </main>
+</body>
+</html>

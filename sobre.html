@@ -1,0 +1,422 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sobre a FANVERSE</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(
+                135deg,
+                #08091c,
+                #17113b,
+                #301052
+            );
+
+            color: white;
+            line-height: 1.7;
+        }
+
+        header {
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,0,0,0.3);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            color: #00eaff;
+            text-shadow: 0 0 15px #00eaff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            transition: .3s;
+        }
+
+        nav a:hover {
+            color: #00eaff;
+        }
+
+        .hero {
+            min-height: 420px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+
+            background:
+                radial-gradient(circle, #52227c 0%, #17113b 55%, #08091c 100%);
+        }
+
+        .hero h1 {
+            font-size: 65px;
+            letter-spacing: 8px;
+            color: #00eaff;
+            text-shadow: 0 0 25px #00eaff;
+        }
+
+        .hero h2 {
+            font-size: 23px;
+            margin-top: 15px;
+            color: #ff4de3;
+            letter-spacing: 3px;
+        }
+
+        .hero p {
+            margin-top: 20px;
+            color: #d8d8ee;
+            font-size: 17px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 25px;
+        }
+
+        .section {
+            margin-bottom: 55px;
+            padding: 35px;
+
+            background: rgba(255,255,255,0.06);
+
+            border: 1px solid rgba(255,255,255,0.12);
+
+            border-radius: 18px;
+
+            backdrop-filter: blur(15px);
+
+            box-shadow: 0 0 25px rgba(0,234,255,0.08);
+        }
+
+        .section h2 {
+            color: #00eaff;
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-left: 5px solid #ff4de3;
+            padding-left: 15px;
+        }
+
+        .section p {
+            color: #e0e0f0;
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        .valores {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .valor {
+            background: rgba(255,255,255,0.07);
+            border: 1px solid rgba(0,234,255,0.25);
+            padding: 22px;
+            border-radius: 14px;
+            transition: .3s;
+        }
+
+        .valor:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 0 20px rgba(0,234,255,0.3);
+        }
+
+        .valor h3 {
+            color: #ff4de3;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .valor p {
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .publico {
+            text-align: center;
+        }
+
+        .publico h2 {
+            border: none;
+            padding: 0;
+        }
+
+        .idade {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 35px;
+            border-radius: 30px;
+            background: linear-gradient(90deg, #00c9ff, #ff4de3);
+            color: #08091c;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 35px 20px;
+            background: rgba(0,0,0,0.4);
+            color: #aaa;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        footer strong {
+            color: #00eaff;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+                letter-spacing: 4px;
+            }
+
+            .hero h2 {
+                font-size: 16px;
+            }
+
+            .section {
+                padding: 22px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <div class="logo">
+            FANVERSE
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="#missao">Missão</a>
+            <a href="#valores">Valores</a>
+        </nav>
+
+    </header>
+
+
+    <!-- APRESENTAÇÃO -->
+
+    <section class="hero">
+
+        <h1>FANVERSE</h1>
+
+        <h2>Your World. Your Fans. Your Experience.</h2>
+
+        <p>
+            Conectando fãs, música, viagens e experiências pelo mundo.
+        </p>
+
+    </section>
+
+
+    <main class="container">
+
+        <!-- SOBRE A EMPRESA -->
+
+        <section class="section">
+
+            <h2>Quem Somos</h2>
+
+            <p>
+                A FANVERSE é um ecossistema global de entretenimento,
+                turismo de eventos e economia de fãs que conecta pessoas
+                à música, aos festivais e às experiências que fazem parte
+                de suas paixões.
+            </p>
+
+            <br>
+
+            <p>
+               
+            </p>
+
+            <br>
+
+            <p>
+                
+            </p>
+
+            <br>
+
+            <p>
+                Mais do que organizar viagens ou promover eventos,
+                a FANVERSE busca transformar a cultura de fãs em um
+                mercado conectado, inovador e global.
+            </p>
+
+        </section>
+
+
+        <!-- MISSÃO -->
+
+        <section class="section" id="missao">
+
+            <h2>Nossa Missão</h2>
+
+            <p>
+                Conectar fãs às suas paixões por meio de experiências
+                musicais, viagens e tecnologias inovadoras, criando
+                conexões significativas e valor compartilhado entre
+                comunidades, artistas e empresas.
+            </p>
+
+        </section>
+
+
+        <!-- VALORES -->
+
+        <section class="section" id="valores">
+
+            <h2>Nossos Valores</h2>
+
+            <div class="valores">
+
+                <div class="valor">
+                    <h3>💡 Inovação contínua</h3>
+                    <p>
+                        Utilizar tecnologia e criatividade para reinventar
+                        a descoberta, o planejamento e a vivência de eventos.
+                    </p>
+                </div>
+
+                <div class="valor">
+                    <h3>❤️ Fãs no centro</h3>
+                    <p>
+                        Desenvolver produtos e serviços a partir das
+                        necessidades reais das comunidades, respeitando
+                        sua identidade e participação.
+                    </p>
+                </div>
+
+                <div class="valor">
+                    <h3>🌎 Mentalidade global</h3>
+                    <p>
+                        Conectar pessoas, culturas, artistas e destinos,
+                        com experiências acessíveis a diferentes mercados.
+                    </p>
+                </div>
+
+                <div class="valor">
+                    <h3>🤝 Comunidade e pertencimento</h3>
+                    <p>
+                        Fortalecer os vínculos entre fãs e criar espaços
+                        para experiências compartilhadas.
+                    </p>
+                </div>
+
+                <div class="valor">
+                    <h3>⭐ Excelência nas experiências</h3>
+                    <p>
+                        Planejar jornadas seguras, organizadas e memoráveis,
+                        desde a descoberta do evento até o retorno da viagem.
+                    </p>
+                </div>
+
+                <div class="valor">
+                    <h3>🎵 Colaboração e cocriação</h3>
+                    <p>
+                        Construir parcerias de longo prazo com artistas,
+                        produtores, marcas, destinos e comunidades de fãs.
+                    </p>
+                </div>
+
+                <div class="valor">
+                    <h3>🔐 Confiança e responsabilidade</h3>
+                    <p>
+                        Agir com transparência, proteger os dados dos
+                        usuários e respeitar os direitos dos fãs,
+                        artistas e parceiros.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section publico">
+
+        <section class="section publico">
+
+            <h2>FANVERSE</h2>
+
+            <p>
+                Your World. Your Fans. Your Experience.
+            </p>
+
+            <br>
+
+            <p>
+                Mais do que fãs. Uma comunidade. Mais do que eventos.
+                Experiências inesquecíveis.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            <strong>FANVERSE</strong>
+        </p>
+
+        <p>
+            Your World. Your Fans. Your Experience.
+        </p>
+
+        <p>
+            © 2026 FANVERSE - Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
